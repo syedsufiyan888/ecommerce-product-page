@@ -11,6 +11,36 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
 </head>
 <body>
 <header>
@@ -22,22 +52,30 @@
     <li>About</li>
     <li>Contact</li>
   </ul>
-  <section class="divlines"><a href="#">
-    <div></div>
-    <div></div>
-    <div></div></a>
+  <section class="divlines">
+    <img class="menuimg" src="images/icon-menu.svg" alt="">
   </section>
-  <p class="sneakers">sneakers</p>
-</header>
+  <div class="sneakers"><img src="images/logo.svg" alt=""></div>
+  <img class="cartimg" src="images/icon-cart.svg" alt="">
+  <img class="avatarimg" src="images/image-avatar.png" alt="">
 </nav>
+</header>
 <main>
-  <p>Sneaker Company</p>
+  <div class="slideshow-container">
+  <img src="images/image-product-1.jpg" alt="">
+  <!-- <img src="images/image-product-2.jpg" alt="">
+  <img src="images/image-product-3.jpg" alt="">
+  <img src="images/image-product-4.jpg" alt=""> -->
+  </div>
+  <p class="speaker-company">SNEAKER COMPANY</p>
   <p class="fall">Fall Limited Edition Sneakers</p>
   <p class="these">These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  <div class="pricing">
   <p class="dollar">$125.00</p>
   <p class="fifty">50%</p> 
   <p class="dollar2">$250.00</p> 
+</div>
 
   <p class="zero">0</p>
   <button class="cart">Add to cart</button>

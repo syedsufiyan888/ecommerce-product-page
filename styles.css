@@ -7,39 +7,178 @@ body {
   
   @media (min-width: 200px) {
 
+    
+    body{
+        margin: 1.8rem;
+        margin-top: auto;
+        /* width: 100vw;
+        overflow: hidden;
+        height: au; */
+      }
 
     nav{
         display: flex;
         /* justify-content: space-between; */
         align-items: center;
-        margin-left: 1.5rem;
-        margin-top: 1.5rem;
+        /* margin-left: 1rem; */
+        margin-top: 1rem;
+        margin-bottom: 0.7rem;
+        position: sticky;
+        
     }
-    nav .divlines div{
-        width: 1.7rem;
-        height: 4px;
-        background-color: #000000;
-        margin: 6px 0;
-        vertical-align: middle;
+    /* nav .divlines div{ */
+        /* width: 1.7rem; */
+        /* height: 0.25rem; */
+        /* background-color: #000000; */
+        /* margin: 0.3rem; */
+        /* margin-top: 0; */
+        /* vertical-align: middle; */
         /* margin-left: auto; */
         /* align-items: flex-start;       */
-    }
+    /* } */
     nav ul{
         display: none;
         position: sticky;
-        top: 260px;
+        top: 15rem;     
         left: 0;
         text-align: right;
     }
     nav ul li{
         display: block;
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     nav ul li a:hover{
         color: red;
         
     }
+    /* nav p{
+        vertical-align: middle;
+    } */
 
+    .menuimg{
+        width: 1.1rem;
+        height: auto;
+    }
+    .sneakers{
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        font-weight: 900;
+        /* margin-top: 0; */
+        /* vertical-align: middle; */
+    }
+    .avatarimg{
+        /* float: right; */
+        position: absolute;
+        right: 0rem;
+        display: block;
+        width: 1.9rem;
+        height: auto;
+    }
+    .cartimg
+        {
+        /* float: right; */
+        position: absolute;
+        right: 4rem;
+        /* display: block; */
+        width: 1.6rem;
+        height: auto;
+    }
+
+    body main .slideshow-container img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        /* height: auto; */
+        
+    }
+    body main .slideshow-container *{
+        box-sizing: border-box;
+        
+        margin: 0;
+        padding: 0;
+    }
+
+    .slideshow-container {
+        width:100%    ;
+        position: relative;
+        /* margin: auto; */
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+
+      .speaker-company{
+        font-weight: 600;
+        color: grey;
+      }
+      .fall{
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .these{
+        font-size: 1rem;
+        color: grey;
+        font-weight: 400;
+      }
+      .dollar{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+      .pricing{
+        display: flex;
+
+      }
+      .fifty{
+        margin: 0.7rem;
+        color: rgb(255, 255, 255);
+        border: 0.4rem solid rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        border-radius: 0.5rem;
+        font-weight: 700;
+        vertical-align: bottom;
+      }
+      .dollar2{
+        font-size: 1.1rem;
+        position: relative;
+        left: 4rem;
+        font-weight: 600;
+        text-decoration: line-through;
+        color: grey;
+      }
+
+
+    
 
   }
 
