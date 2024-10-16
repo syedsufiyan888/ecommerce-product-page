@@ -176,6 +176,23 @@ body {
         text-decoration: line-through;
         color: grey;
       }
+      .zero{
+        
+        display: flex;
+        justify-content: space-between;
+        border: 0.5rem solid rgb(227, 227, 255);
+        padding: 0.7rem;
+        background-color: rgb(227, 227, 255);
+        
+        
+        border-radius: 0.7rem;
+      }
+      .zero img{
+        
+        width: 1rem;
+        height: 0.5rem;
+      }
+      
       
 
 
